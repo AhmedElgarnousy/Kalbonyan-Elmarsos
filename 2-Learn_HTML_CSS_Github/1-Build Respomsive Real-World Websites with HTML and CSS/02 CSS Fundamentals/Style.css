@@ -2,7 +2,30 @@ body {
   color: #444;
   font-family: sans-serifx;
 }
+.main-header {
+  background-color: rgb(163, 163, 163);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 80px;
+}
+.post-header {
+  margin-bottom: 30px;
+}
+nav {
+  font-size: 18px;
+}
+article {
+  margin-bottom: 60px;
+}
 
+aside {
+  background-color: rgb(217, 213, 213);
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  margin-bottom: 60px;
+}
 h1,
 h2,
 h3 {
@@ -18,6 +41,7 @@ h2 {
 }
 h3 {
   font-size: 30px;
+  margin-top: 30px;
 }
 h4 {
   font-size: 30px;
@@ -26,10 +50,17 @@ h4 {
 }
 li {
   font-size: 16px;
+  margin-bottom: 10px;
 }
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 footer p {
   font-size: 10px;
@@ -52,14 +83,7 @@ header p {
 .related {
   list-style: none;
 }
-.main-header {
-  background-color: rgb(163, 163, 163);
-}
-aside {
-  background-color: rgb(217, 213, 213);
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
+
 /*
 .first-li {
   font-weight: bold;
@@ -90,6 +114,15 @@ a:hover {
   font-weight: bold;
   text-decoration: underline dashed orangered;
 }
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*
 #copyright {
   color: red;
@@ -112,6 +145,3 @@ nav p {
   font-size: 18px;
 }
 */
-nav {
-  font-size: 18px;
-}
