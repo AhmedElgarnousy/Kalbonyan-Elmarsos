@@ -1,19 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #444;
   font-family: sans-serifx;
+  position: relative;
 }
 .main-header {
-  background-color: rgb(163, 163, 163);
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 80px;
+  background-color: rgb(231, 226, 226);
+  padding: 0px 40px;
+  /*height: 80px;*/
 }
 .post-header {
   margin-bottom: 30px;
+  /*position: relative;*/
 }
 nav {
   font-size: 18px;
+  text-align: center;
 }
 article {
   margin-bottom: 60px;
@@ -52,6 +58,7 @@ li {
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 p {
   font-size: 22px;
   line-height: 1.5;
@@ -119,7 +126,7 @@ a:hover {
   height: auto;
 }
 .container {
-  width: 700px;
+  width: 755px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -145,3 +152,54 @@ nav p {
   font-size: 18px;
 }
 */
+nav a:link {
+  /*
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;*/
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.center-nav {
+  text-align: center;
+}
+
+button {
+  font-size: 22px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  /* top: ;*/
+  /*left: ;*/
+  bottom: 50px;
+  right: 50px;
+}
+/*Pseudo Element demo */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h3 + P::first-line {
+  color: red;
+}
+h2 {
+  /*background-color: orangered;*/
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10;
+  right: -25px;
+}
