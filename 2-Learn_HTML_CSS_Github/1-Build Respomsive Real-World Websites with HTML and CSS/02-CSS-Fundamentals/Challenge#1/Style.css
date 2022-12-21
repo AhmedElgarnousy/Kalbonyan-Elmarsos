@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.Top-title {
+  background-color: rgb(225, 223, 223);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+}
+.price {
+  font-size: 20px;
+  /*font-weight: bold;*/
+}
+.shipping {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.product {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*LVHA*/
+a:link {
+  color: rgb(75, 75, 75);
+  font-size: 18px;
+}
+a:visited {
+  color: rgb(75, 75, 75);
+}
+a:hover {
+  text-decoration: none rgb(75, 75, 75);
+}
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: square;
+  font-size: 16px;
+}
+.add-cart {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  color: black;
+  background-color: white;
+  border: none;
+}

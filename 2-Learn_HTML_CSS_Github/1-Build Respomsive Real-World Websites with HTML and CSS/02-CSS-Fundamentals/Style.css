@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  font-family: sans-serifx;
+  position: relative;
+}
+.main-header {
+  background-color: rgb(231, 226, 226);
+  padding: 0px 40px;
+  /*height: 80px;*/
+}
+.post-header {
+  margin-bottom: 30px;
+  /*position: relative;*/
+}
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: rgb(217, 213, 213);
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  margin-bottom: 60px;
+}
+h1,
+h2,
+h3 {
+  color: rgb(29, 118, 146);
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 10px;
+}
+
+header p {
+  font-style: italic;
+}
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#copyright {
+  font-size: 16px;
+}
+
+.Related-Author {
+  font-weight: bold;
+}
+.related {
+  list-style: none;
+}
+
+/*
+.first-li {
+  font-weight: bold;
+}
+*/
+li:last-child {
+  font-weight: bold;
+}
+/*
+li:nth-child(odd) {
+  font-weight: bold;
+  color: aquamarine;
+}
+article p:last-child {
+  color: red;
+}
+*/
+
+a {
+  color: #1098ab;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ab;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dashed orangered;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 755px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+}
+*/
+/*
+nav a:link,
+nav p {
+  font-size: 18px;
+}
+*/
+nav a:link {
+  /*
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;*/
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.center-nav {
+  text-align: center;
+}
+
+button {
+  font-size: 22px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  /* top: ;*/
+  /*left: ;*/
+  bottom: 50px;
+  right: 50px;
+}
+/*Pseudo Element demo */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h3 + P::first-line {
+  color: red;
+}
+h2 {
+  /*background-color: orangered;*/
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  background-color: yellow;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10;
+  right: -25px;
+}
