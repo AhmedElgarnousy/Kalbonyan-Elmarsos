@@ -74,6 +74,7 @@
   height: 9.6rem;
 
   padding: 0 9.6rem;
+  position: relative;
 }
 
 .logo {
@@ -86,7 +87,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -113,6 +114,40 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf7117;
 }
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background-color: #fdf2e9;
+  /* background-color: none; */
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.97);
+
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
 /************************************/
 /*  HERO SECTION  */
 /************************************/
@@ -537,12 +572,11 @@
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 
   /* temp */
-  height: 50rem;
+  /* height: 50rem; */
 }
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -552,6 +586,7 @@
 
 .cta-text-box .heading-secondary {
   color: #45260a;
+  margin-bottom: 3.2rem;
 }
 .cta-text {
   font-size: 1.8rem;
@@ -585,6 +620,7 @@
 .cta-form select {
   width: 100%;
   padding: 1.2rem;
+  font-size: 1.8rem;
   color: inherit;
   font-family: inherit;
   border: none;
