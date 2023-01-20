@@ -63,16 +63,26 @@
             <p class="heading-description1">
               Find the best application in the appie.
             </p>
-            <div>
-              <label for="email"></label>
-              <input
-                id="email"
-                type="email"
-                placeholder="info@appie.com"
-                name="email"
-                required
-              />
-            </div>
+            <!-- <label for="email"></label> -->
+            <form>
+              <div class="email-form">
+                <ion-icon
+                  name="mail-outline"
+                  class="mail-icon-inside"
+                ></ion-icon>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="info@appie.com"
+                  name="email"
+                  required
+                />
+                <ion-icon
+                  name="arrow-forward-outline"
+                  class="arrow-icon-inside"
+                ></ion-icon>
+              </div>
+            </form>
             <div class="feedback-part">
               <div class="feedback-imgs">
                 <img src="imgs/people/customer-1.jpg" alt="a customer1 photo" />
@@ -868,11 +878,11 @@
                 class="photo-ahmed"
               />
               <div class="stars">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star" class="star-icon"></ion-icon>
+                <ion-icon name="star" class="star-icon"></ion-icon>
+                <ion-icon name="star" class="star-icon"></ion-icon>
+                <ion-icon name="star" class="star-icon"></ion-icon>
+                <ion-icon name="star" class="star-icon"></ion-icon>
               </div>
               <p class="review">(4.7) review</p>
             </div>
@@ -888,13 +898,19 @@
                   <p class="author-name">Hanson Deck</p>
                   <p class="author-job">Web developer</p>
                 </div>
-                <div class="nav-btns">
-                  <button class="btn">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
-                  </button>
-                  <button class="btn">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </button>
+                <div class="nav-btns-testimonial">
+                  <a class="btn-testimonial">
+                    <ion-icon
+                      name="arrow-back-outline"
+                      class="icon-testimonial"
+                    ></ion-icon>
+                  </a>
+                  <a class="btn-testimonial">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      class="icon-testimonial"
+                    ></ion-icon>
+                  </a>
                 </div>
               </div>
             </div>
@@ -954,7 +970,7 @@
             </a>
           </div>
         </div>
-        <div class="nav-col">
+        <div class="nav-col nav-col-2">
           <h3 class="footer-heading">Company</h3>
           <ul class="footer-nav">
             <li>About Us</li>

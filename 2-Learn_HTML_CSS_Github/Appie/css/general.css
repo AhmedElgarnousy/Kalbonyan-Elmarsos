@@ -73,14 +73,15 @@ html {
   /* Does NOT work on safari */
   /* scroll-behavior: smooth; */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   /* font-weight: 400; */
   line-height: 1;
-  /* background-color: #f8f9fa; */
   background-color: #e8eaeb;
+  overflow-x: hidden;
 }
 
 /************************************/

@@ -78,6 +78,9 @@
   line-height: 1.4;
 }
 
+.email-form {
+  position: relative;
+}
 #email {
   padding: 1.6rem;
   border-radius: 50rem;
@@ -85,6 +88,25 @@
   border: 1px solid #fff;
   box-shadow: -4px 0 0 0rem #f74369;
   margin-bottom: 2rem;
+  padding-left: 5rem;
+}
+.mail-icon-inside {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 10px 10px;
+  color: #b6b1b1;
+}
+.arrow-icon-inside {
+  position: absolute;
+  left: 316px;
+  top: 4px;
+  width: 2rem;
+  height: 2rem;
+  padding: 10px 10px;
+  color: #f74369;
 }
 
 .hero-img {
@@ -375,7 +397,7 @@
 
 .video-head-text {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .video-head-text h2 {
   font-family: sans-serif;
@@ -388,7 +410,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-left: 37rem;
+  margin-left: 42rem;
 }
 .btn {
   display: flex;
@@ -397,17 +419,20 @@
   height: 3.6rem;
   width: 3.6rem;
   border-radius: 50%;
-  border: 1px solid #b2adad;
   background-color: #fff;
+  border: 1px solid #b2adad;
   color: #555;
 }
+
 .video-text-description {
   font-size: 1.2rem;
 }
 .video-text-description p {
-  line-height: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  width: 55rem;
   margin-bottom: 3rem;
-  /* padding-right: 66rem; */
+  /* padding-right: 61rem; */
 }
 
 /************************************/
@@ -505,6 +530,7 @@
   margin-top: 5.6rem;
   margin-bottom: 5.6rem;
 }
+
 .butt div {
   display: flex;
   align-items: center;
@@ -532,8 +558,22 @@
   /* width: 325px; */
 }
 .plan-2 {
-  /* box-shadow: 0 3.2rem 6.4rem rgb(0 0 0 / 6%); */
-  box-shadow: 0 -3px 0 0 #f74369;
+  border-top: 3px solid #f74369;
+  box-shadow: 0 2rem 3.5rem #c9c1c1;
+  position: relative;
+}
+.plan-2::after {
+  content: "Most Populer";
+  background-color: #2133ff;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 14px;
+  right: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 .start-btn-2 {
   background-color: #f74369;
@@ -625,17 +665,43 @@
   z-index: 1;
   top: 16rem;
   left: 18rem;
-
+  font-family: sans-serif;
   color: #fff;
 }
 .stars {
-  margin-left: 3rem;
-  margin-bottom: 1.6rem;
+  margin-left: 0.7rem;
+  margin-bottom: 0.6rem;
   color: #ffd43b;
 }
+.star-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.nav-btns-testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 40rem;
+}
+.btn-testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  border: 3px solid #d3c8c82b;
+}
+.icon-testimonial {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .review {
+  font-family: sans-serif;
   font-size: 1.6rem;
   margin-left: 2rem;
+  color: #ece0e09e;
 }
 .photo-ahmed {
   width: 12rem;
@@ -645,6 +711,7 @@
 }
 .author-info {
   display: flex;
+
   /* justify-content:; */
 }
 .quote-text {
@@ -652,7 +719,7 @@
   font-weight: 500;
   line-height: 2.6rem;
   margin-bottom: 3rem;
-  padding-right: 50rem;
+  padding-right: 57rem;
 }
 .author-name {
   font-size: 1.6rem;
@@ -662,7 +729,7 @@
 }
 .author-job {
   font-size: 1.6rem;
-  color: #fff;
+  color: #ece0e09e;
 }
 /************************************/
 /*  SPONSERS COMPONENT  */
@@ -739,7 +806,8 @@
   background-color: #fff;
   transition: all 0.3s;
 }
-.nav-col {
+.nav-col-2 {
+  padding-left: 13rem;
 }
 .footer-heading {
   font-size: 1.8rem;
@@ -758,19 +826,26 @@
   font-weight: 600;
   font-size: 1.5rem;
 }
-.address-col {
-}
+
 .email-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   color: #555;
   margin-bottom: 2rem;
 }
 .call-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   color: #555;
   margin-bottom: 2rem;
   font-weight: 700;
 }
 .location-adress {
   display: flex;
+  align-items: center;
+  gap: 1rem;
   font-size: 1.2rem;
   color: #555;
   font-weight: 700;
@@ -789,8 +864,9 @@
   transition: all 0.3s;
 }
 .contact-icon {
-  color: #1971c2;
-  width: 1.5rem;
+  color: #052aefba;
+  height: 2rem;
+  width: 2rem;
 }
 
 .footer-end {
@@ -835,5 +911,6 @@
 
 .copyright {
   font-family: sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #555;
 }

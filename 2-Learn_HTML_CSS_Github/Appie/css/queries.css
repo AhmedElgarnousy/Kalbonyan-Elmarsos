@@ -2,18 +2,39 @@
 /*  BELOW 1344 px  (for smaller Desktop)  */
 /******************************************/
 @media (max-width: 84em) {
+  .section-hero {
+    max-width: 135rem;
+  }
 }
 
 /********************************************/
 /*  BELOW 1200 px  (for Landscape Tablets)  */
 /********************************************/
 @media (max-width: 75em) {
+  html {
+    font-size: 52.5%;
+  }
+  .section-hero {
+    max-width: 147rem;
+  }
+  .arrow-icon-inside {
+    left: 267px;
+  }
+  .appie-photo-1 {
+    width: 700px;
+  }
+  .appie-photo-2 {
+    width: 340px;
+  }
 }
 
 /*********************************/
 /*  BELOW 944 px  (for Tablets)  */
 /*********************************/
 @media (max-width: 59em) {
+  .sec-how-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*************************************/
