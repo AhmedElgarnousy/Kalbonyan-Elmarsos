@@ -6,7 +6,7 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 ## The Aim of this internship
 
-* Learn https://github.com/AhmedElgarnousy/Kalbonyan-Elmarsos/tree/main/1-Learn_Programming_Foundations Learn Programming Foundations
+* Learn Programming Foundations
 * Learn MERN Stack
 * Learn How to Deploy your web applications with Cloud Provider (AWS)
 * Learn How to Make serverless web applications
