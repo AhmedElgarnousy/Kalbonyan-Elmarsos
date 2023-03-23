@@ -4,30 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Validator</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <form class="form-register">
+    <form id="form-register" class="form-register">
       <h1 class="head-register">Register With Us</h1>
       <div class="form-box">
-        <label class="label">Username</label>
-        <input type="text" placeholder=" Enter username " required />
+        <label for="username" class="label">Username</label>
+        <input type="text" id="username" placeholder=" Enter username " />
+        <small>Error Message</small>
       </div>
       <div class="form-box">
-        <label>Email </label>
-        <input type="text" placeholder=" Enter email" required />
+        <label for="email">Email </label>
+        <input type="text" id="email" placeholder=" Enter email" />
+        <small>Error Message</small>
       </div>
       <div class="form-box">
-        <label>Password</label>
-        <input type="text" placeholder=" Enter password " required />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder=" Enter password " />
+        <small>Error Message</small>
       </div>
       <div class="form-box">
-        <label>Confirm Password</label>
-        <input type="text" placeholder=" Enter password again " required />
+        <label
+          for="password
+        "
+          >Confirm Password</label
+        >
+        <input
+          type="password"
+          id="password2"
+          placeholder=" Enter password again "
+        />
+        <small>Error Message</small>
       </div>
-
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
