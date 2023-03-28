@@ -1,6 +1,6 @@
-# Appie 
+# Appie test
 
-Application to practice HTML and CSS Skills
+Test for the first stage of the competition(***HTML***, ***CSS***)
 
 - [code](https://github.com/AhmedElgarnousy/Kalbonyan-Elmarsos/tree/main/2-Learn_HTML_CSS_Github/Appie)
 
