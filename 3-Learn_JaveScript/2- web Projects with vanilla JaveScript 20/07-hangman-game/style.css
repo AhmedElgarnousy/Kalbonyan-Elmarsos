@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #272b38;
+
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.congrats-modal {
+  margin-bottom: 50px;
+}
+.modal {
+  color: #fff;
+  background-color: #1e3b9c;
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  left: 50%;
+  /* bottom: 50%; */
+  /* transform: translateX(-50%, 50%); */
+}
