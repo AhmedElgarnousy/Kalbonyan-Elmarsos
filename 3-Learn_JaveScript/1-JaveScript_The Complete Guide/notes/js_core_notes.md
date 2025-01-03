@@ -331,3 +331,117 @@ const totalUsers = 15;
   - ``, '' , ""
 
 - Functions
+- introduction to global and Local scope
+- execute functions indirectly (callback)
+
+```js
+let currentResult = 0;
+
+function add() {
+  currentResult = currentResult + parseInt(userInput.value);
+  // currentResult = currentResult + +userInput.value; // shorter form
+  outputResult(currentResult, "");
+}
+
+addBtn.addEventListener("click", add);
+```
+
+#### "Indirect" vs "Direct" Function Execution - Summary
+
+It can be confusing to see that there seem to be two ways of executing a function:
+
+```js
+function add() {
+  something = someNum + someOtherNum;
+}
+```
+
+###### add() vs add
+
+It's important to understand why we have these "two ways"!
+
+In general, you call a function that you defined by using its name (e.g. add) and adding parentheses (with any parameters the function might need - or empty parentheses if no parameters are required like in the above example).
+
+=> add()
+
+This is how you execute a function from your code. Whenever JavaScript encounters this statement, it goes ahead and runs the code in the function. Period!
+
+Sometimes however, you don't want to execute the function immediately. You rather want to "tell JavaScript" that it should execute a certain function at some point in the future (e.g. when some event occurs).
+
+That's when you don't directly call the function but when you instead just provide JavaScript with the name of the function.
+
+```js
+=> someButton.addEventListener('click', add);
+```
+
+This snippet would tell JavaScript: "Hey, when the button is clicked, go ahead and execute add.".
+
+```js
+someButton.addEventListener('click', add()); would be wrong.
+```
+
+Why? Because JavaScript would encounter that line when it parses/ executes your script and register the event listener AND immediately execute add - because you added parentheses => That means (see above): "Please execute that function!".
+
+- converting Data Types
+
+```js
+parseInt(str);
+num.toString();
+```
+
+###### Mixing Numbers & Strings
+
+Thankfully, JavaScript is pretty smart and therefore is actually able to handle this code:
+
+```js
+3 * '3' => 9
+```
+
+Please note: It yields the number (!) 9, NOT a string '9'!
+Similarly, these operations also all work:
+
+```js
+3 - '3' => 0
+
+3 / '3' => 1
+```
+
+Just 3 + '3' yields '33' because here JavaScript uses the "I can combine text" mode of the + operator and generates a string instead of a number.
+
+```js
+// test
+alert(3 * "3");
+alert(3 / "3");
+alert(3 - "3");
+alert(3 + "3");
+```
+
+- splitting code into functions
+
+```js
+let currentResult = 0;
+
+function getUserNumInput() {
+  return parseInt(userInput.value);
+}
+
+function createAndWriteOutput(operator, lastRes, curNum) {
+  calcDescription = `${lastRes} ${operator} ${curNum}`;
+  return calcDescription;
+}
+
+function add() {
+  let enteredNum = getUserNumInput();
+  calcDescription = createAndWriteOutput("+", currentResult, enteredNum);
+  currentResult = currentResult + enteredNum;
+  outputResult(currentResult, calcDescription);
+}
+
+addBtn.addEventListener("click", add);
+```
+
+- coonecting all buttons to functions
+
+```js
+
+```
