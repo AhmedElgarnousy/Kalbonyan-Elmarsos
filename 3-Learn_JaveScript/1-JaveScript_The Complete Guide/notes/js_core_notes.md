@@ -427,21 +427,143 @@ function getUserNumInput() {
 
 function createAndWriteOutput(operator, lastRes, curNum) {
   calcDescription = `${lastRes} ${operator} ${curNum}`;
-  return calcDescription;
+  outputResult(Result, calcDescription);
 }
 
 function add() {
   let enteredNum = getUserNumInput();
-  calcDescription = createAndWriteOutput("+", currentResult, enteredNum);
-  currentResult = currentResult + enteredNum;
-  outputResult(currentResult, calcDescription);
+  let InitCurRes = Result;
+  Result += enteredNum;
+  createAndWriteOutput("+", InitCurRes, enteredNum);
 }
 
 addBtn.addEventListener("click", add);
 ```
 
-- coonecting all buttons to functions
+- connecting all buttons to functions
 
 ```js
 
 ```
+
+- working with code comments
+
+```js
+// LINE comment
+/*
+  block comment
+ */
+// don't write an assay to describe your code and obvious information
+// write comments to simplify unclear logic or use case testing or etc
+```
+
+- more operators
+
+```js
++=, -=, *=, /=, ++, --
+```
+
+- more core data types
+- using arrays
+
+```js
+let arr = [];
+arr.push(1);
+```
+
+- coding exercise 4: Arrays
+- creating objects
+
+```js
+const logEntry = {
+  operation: "ADD",
+  prevResult: InitCurRes,
+  Number: enteredNum,
+  newResult: Result,
+};
+
+logEntries.push(logEntry);
+console.log(logEntries);
+```
+
+- objects - common syntax gotchas(عثرات)
+
+```js
+//I.e. this would be WRONG and would throw an error:
+
+const worstPossibleUser = {
+    name = 'Max'; // , instead of ;
+    age = 30;
+};
+```
+
+- accessing object data
+
+```js
+console.log(logEntry.operation);
+```
+
+- arrays vs objects
+- adding a Re-Usable funvtion that uses objects
+
+```js
+function writeToLog(operationIdentifier, prevRes, operationNum, newResult) {
+  const logEntry = {
+    operation: operationIdentifier,
+    prevResult: prevRes,
+    number: operationNum,
+    result: newResult,
+  };
+
+  logEntries.push(logEntry);
+  console.log(logEntries);
+}
+
+writeToLog("ADD", InitCurRes, enteredNum, Result);
+```
+
+- undefined , null, NaN
+- The typeof operator
+
+```js
+userName = "ahmed";
+typeof userName; // string
+typeof [1, 2, 3]; // object
+typeof { name: "ahmed", age: 23 }; // object
+typeof null; // object
+typeof undefined; // undefined
+typeof NaN; // number
+typeof 1; // number
+```
+
+- importing scripts correctly with "defer" & ""async
+
+  - inspect-> performance -> record then refresh then stop
+  - select loading time from timeline
+  - see network(Requests file) and main views(see what the CPU task executes in timeline)
+  - request style.css file, the n scripts.js files
+
+- `defer`: downloading script.js in parallel to parsing index.html and late executing after parsing complete
+
+```js
+Definition and Usage
+The defer attribute is a boolean attribute.
+
+If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing.
+
+Note: The defer attribute is only for external scripts (should only be used if the src attribute is present) because no file downloading process.
+
+Note: There are several ways an external script can be executed:
+
+If async is present: The script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes)
+If defer is present (and not async): The script is downloaded in parallel to parsing the page, and executed after the page has finished parsing
+If neither as
+```
+
+- importing javascript - summary
+  ![import](imgs/import.JPG)
+  ![import](imgs/defer.JPG)
+
+---
+
+### 03_efficient development & debugging
