@@ -1,1 +1,0 @@
-### JaveScript the complete Guide
